@@ -96,6 +96,9 @@ type MongoDBRouteSpec struct {
 	// +kubebuilder:validation:MinItems=1
 	// +kubebuilder:validation:MaxItems=16
 	Rules []MongoDBRouteRule `json:"rules"`
+
+	// +optional
+	Telemetry TelemetryRefence `json:"telemetry,omitempty"`
 }
 
 // MongoDBRouteStatus defines the observed state of MongoDBRoute

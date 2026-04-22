@@ -502,6 +502,11 @@ spec:
                 maxItems: 16
                 minItems: 1
                 type: array
+              telemetry:
+                properties:
+                  ref:
+                    type: string
+                type: object
             required:
             - rules
             type: object
